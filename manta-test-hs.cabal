@@ -1,0 +1,29 @@
+name:                   manta-test-hs
+synopsis:               A simple Manta test program
+description:            A simple Manta test program
+homepage:               https://github.com/kellymclaughlin/manta-test-hs
+Bug-reports:            https://github.com/kellymclaughlin/manta-test-hs/issues
+version:                0.0.1
+license:                MIT
+license-file:           LICENSE
+author:                 Kelly McLaughlin
+maintainer:             kelly@kelly-mclaughlin.com
+category:               Web
+build-type:             Simple
+cabal-version:          >=1.10
+
+source-repository head
+    type: git
+    location: https://github.com/kellymclaughlin/manta-test-hs
+
+executable            manta-test
+  main-is:            Main.hs
+  ghc-options:        -Wall -threaded -O2 -main-is Main
+  default-language:   Haskell2010
+  hs-source-dirs:     src
+  build-depends:        base
+                      , bytestring
+                      , connection
+                      , http-client
+                      , http-client-tls
+                      , http-conduit

@@ -1,0 +1,10 @@
+resolver: lts-8.23
+packages:
+- ./
+
+- location:
+    git: https://github.com/kellymclaughlin/http-client
+    commit: 41a888e87f21fc525d884e9cca273851ac2f2680
+  extra-dep: true
+  subdirs:
+        - http-client
