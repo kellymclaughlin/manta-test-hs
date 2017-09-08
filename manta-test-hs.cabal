@@ -27,3 +27,4 @@ executable            manta-test
                       , http-client
                       , http-client-tls
                       , http-conduit
+                      , http-types
